@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AnimeFlix | Watch Anime. Anytime. Anywhere</title>
+
+    <!-- Browser Icon -->
+    <link rel="icon"
+          href="images/logo.png">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/loading.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- LOADING SCREEN -->
+<!-- ========================= -->
+
+<div id="loader">
+
+    <img src="images/logo.png"
+         alt="AnimeFlix Logo">
+
+    <h1>AnimeFlix</h1>
+
+    <p>Loading your anime universe...</p>
+
+    <div class="loader-bar">
+
+        <span></span>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- SEARCH OVERLAY -->
+<!-- ========================= -->
+
+<div id="searchOverlay">
+
+    <button id="closeSearch">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-search"></i>
+
+        <input
+    type="text"
+    id="searchInput"
+    placeholder="Search anime...">
+
+    </div>
+
+    <div
+    class="search-results"
+    id="searchResults">
+</div>
+    <!-- JavaScript -->
+
+</div>
+
+<!-- ========================= -->
+<!-- WEBSITE -->
+<!-- ========================= -->
+
+<div id="app">
+
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
+
+<header id="header">
+
+<div class="logo">
+
+<a href="#home">
+
+<img src="images/logo.png"
+     alt="AnimeFlix">
+
+<h1>AnimeFlix</h1>
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li>
+
+<a href="#home">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#browse">
+
+Browse
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#genres">
+
+Genres
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#mylist">
+
+My List
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<div class="nav-right">
+
+<button id="searchButton">
+
+<i class="fa-solid fa-search"></i>
+
+</button>
+
+<a href="signin.html"
+   class="signin">
+
+Sign In
+
+</a>
+
+<button id="menuButton">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- MOBILE MENU -->
+<!-- ========================= -->
+
+<div id="mobileMenu">
+
+<a href="#home">
+
+Home
+
+</a>
+
+<a href="#browse">
+
+Browse
+
+</a>
+
+<a href="#genres">
+
+Genres
+
+</a>
+
+<a href="signin.html"
+   class="auth-link"
+   data-target="#mylist">
+
+My List
+
+</a>
+
+<a href="signin.html">
+
+Sign In
+
+</a>
+
+</div>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section id="home">
+
+<div class="hero-slider">
+
+<!-- ================= -->
+
+<div class="slide active">
+
+<img src="images/banners/solo-leveling.png">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<span>FEATURED</span>
+
+<h2>Solo Leveling</h2>
+
+<p>
+
+The weakest hunter becomes humanity's greatest hope.
+
+</p>
+
+<div class="buttons">
+
+<a href="signin.html"
+   class="watch-btn auth-link"
+   data-target="anime/solo-leveling.html">
+
+<i class="fa-solid fa-play"></i>
+
+Watch Now
+
+</a>
+
+<button>
+
+More Info
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= -->
+
+<div class="slide">
+
+<img src="images/banners/demon-slayer.png">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<span>FEATURED</span>
+
+<h2>Demon Slayer</h2>
+
+<p>
+
+Join Tanjiro on his journey to defeat demons.
+
+</p>
+
+<div class="buttons">
+
+<a href="signin.html"
+   class="watch-btn auth-link"
+   data-target="anime/demon-slayer.html">
+
+<i class="fa-solid fa-play"></i>
+
+Watch Now
+
+</a>
+
+
+<button>
+
+More Info
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= -->
+
+<div class="slide">
+
+<img src="images/banners/one-piece.png">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<span>FEATURED</span>
+
+<h2>One Piece</h2>
+
+<p>
+
+The greatest pirate adventure ever told.
+
+</p>
+
+<div class="buttons">
+
+<a href="signin.html"
+   class="watch-btn auth-link"
+   data-target="anime/one-piece.html">
+
+<i class="fa-solid fa-play"></i>
+
+Watch Now
+
+</a>
+
+<button>
+
+More Info
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= -->
+
+<div class="slide">
+
+<img src="images/banners/attack-on-titan.png">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<span>FEATURED</span>
+
+<h2>Attack on Titan</h2>
+
+<p>
+
+Humanity's final stand against the Titans.
+
+</p>
+
+<div class="buttons">
+
+<a href="signin.html"
+   class="watch-btn auth-link"
+   data-target="anime/attack-on-titan.html">
+
+<i class="fa-solid fa-play"></i>
+
+Watch Now
+
+</a>
+
+<button>
+
+More Info
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= -->
+
+<div class="slider-dots">
+
+<span class="dot active"></span>
+
+<span class="dot"></span>
+
+<span class="dot"></span>
+
+<span class="dot"></span>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- TRENDING NOW -->
+<!-- ========================= -->
+
+<section id="trending" class="content-section">
+
+    <div class="section-title">
+
+        <h2>🔥 Trending Now</h2>
+
+        <a href="#browse">View All</a>
+
+    </div>
+
+    <div class="anime-row">
+
+        <!-- Card 1 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/solo-leveling.png">
+
+            <div class="card-info">
+
+                <h3>Solo Leveling</h3>
+
+                <p>Action • Fantasy</p>
+
+                <span>⭐ 9.6</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/demon-slayer.png">
+
+            <div class="card-info">
+
+                <h3>Demon Slayer</h3>
+
+                <p>Action</p>
+
+                <span>⭐ 9.5</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/one-piece.png">
+
+            <div class="card-info">
+
+                <h3>One Piece</h3>
+
+                <p>Adventure</p>
+
+                <span>⭐ 9.8</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/attack-on-titan.png">
+
+            <div class="card-info">
+
+                <h3>Attack on Titan</h3>
+
+                <p>Action</p>
+
+                <span>⭐ 9.7</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- POPULAR -->
+<!-- ========================= -->
+
+<section class="content-section">
+
+    <div class="section-title">
+
+        <h2>⭐ Popular This Week</h2>
+
+    </div>
+
+    <div class="anime-row">
+
+        <!-- Same card structure -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/solo-leveling.png">
+
+            <div class="card-info">
+
+                <h3>Solo Leveling</h3>
+
+                <p>Action • Fantasy</p>
+
+                <span>⭐ 9.6</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/demon-slayer.png">
+
+            <div class="card-info">
+
+                <h3>Demon Slayer</h3>
+
+                <p>Action</p>
+
+                <span>⭐ 9.5</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/one-piece.png">
+
+            <div class="card-info">
+
+                <h3>One Piece</h3>
+
+                <p>Adventure</p>
+
+                <span>⭐ 9.8</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="anime-card">
+
+            <img src="images/banners/attack-on-titan.png">
+
+            <div class="card-info">
+
+                <h3>Attack on Titan</h3>
+
+                <p>Action</p>
+
+                <span>⭐ 9.7</span>
+
+                <a href="signin.html">Watch Now</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTINUE WATCHING -->
+<!-- ========================= -->
+
+<section class="content-section">
+
+    <div class="section-title">
+        <a href="signin.html"
+   class="watch-btn auth-link"
+   data-target="#continue">
+
+❤️ Continue Watching
+
+</a>
+
+
+
+    <div class="continue-box">
+
+        <p>
+
+            Sign in to continue watching your favorite anime.
+
+        </p>
+
+        <a href="signin.html">
+
+            Sign In
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BROWSE -->
+<!-- ========================= -->
+
+<section id="browse">
+
+<h2>Browse Anime</h2>
+
+<div class="filters">
+
+<button class="active">
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+All
+
+</a>
+
+</button>
+
+<button>
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+⚔ Action
+
+</a>
+
+</button>
+
+<button>
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+🧙 Fantasy
+
+</a>
+
+</button>
+
+<button>
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+🌍 Adventure
+
+</a>
+
+</button>
+
+<button>
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+Sports
+
+</a>
+
+</button>
+
+<button>
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+Completed
+
+</a>
+
+</button>
+
+<button>
+
+<a href="signin.html"
+   class="genre auth-link"
+   data-target="#browse">
+
+Ongoing
+
+</a>
+
+</button>
+
+</div>
+
+<div class="anime-grid">
+
+    <a href="signin.html" class="anime-card auth-link" data-target="anime/solo-leveling.html">
+        <img src="images/banners/solo-leveling.png" alt="Solo Leveling">
+        <div class="card-info">
+            <h3>Solo Leveling</h3>
+            <p>Action • Fantasy</p>
+            <span>⭐ 9.6</span>
+            <span class="card-cta">Watch Now</span>
+        </div>
+    </a>
+
+    <a href="signin.html" class="anime-card auth-link" data-target="anime/demon-slayer.html">
+        <img src="images/banners/demon-slayer.png" alt="Demon Slayer">
+        <div class="card-info">
+            <h3>Demon Slayer</h3>
+            <p>Action</p>
+            <span>⭐ 9.5</span>
+            <span class="card-cta">Watch Now</span>
+        </div>
+    </a>
+
+    <a href="signin.html" class="anime-card auth-link" data-target="anime/one-piece.html">
+        <img src="images/banners/one-piece.png" alt="One Piece">
+        <div class="card-info">
+            <h3>One Piece</h3>
+            <p>Adventure</p>
+            <span>⭐ 9.8</span>
+            <span class="card-cta">Watch Now</span>
+        </div>
+    </a>
+
+    <a href="signin.html" class="anime-card auth-link" data-target="anime/attack-on-titan.html">
+        <img src="images/banners/attack-on-titan.png" alt="Attack on Titan">
+        <div class="card-info">
+            <h3>Attack on Titan</h3>
+            <p>Action</p>
+            <span>⭐ 9.7</span>
+            <span class="card-cta">Watch Now</span>
+        </div>
+    </a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GENRES -->
+<!-- ========================= -->
+
+<section id="genres">
+
+<h2>Browse Genres</h2>
+
+<div class="genre-grid">
+
+<div>⚔ Action</div>
+
+<div>🧙 Fantasy</div>
+
+<div>🌍 Adventure</div>
+
+<div>😂 Comedy</div>
+
+<div>💕 Romance</div>
+
+<div>👻 Horror</div>
+
+<div>⚽ Sports</div>
+
+<div>🚀 Sci-Fi</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MY LIST -->
+<!-- ========================= -->
+
+<section id="mylist">
+
+<h2>My List</h2>
+
+<div class="empty-list">
+
+<i class="fa-regular fa-heart"></i>
+
+<p>
+
+You haven't saved any anime yet.
+
+</p>
+
+<a href="#browse">
+
+Browse Anime
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- NEWSLETTER -->
+<!-- ========================= -->
+
+<section class="newsletter">
+
+<h2>
+
+Never Miss A New Episode
+
+</h2>
+
+<p>
+
+Subscribe to receive updates whenever new anime are added.
+
+</p>
+
+<form>
+
+<input
+
+type="email"
+
+placeholder="Enter your email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<img src="images/logo.png">
+
+<h2>AnimeFlix</h2>
+
+<p>
+
+Stream your favorite anime anywhere.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li>
+
+<a href="#home">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#browse">
+
+Browse
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#genres">
+
+Genres
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#mylist">
+
+My List
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>
+
+Support
+
+</h3>
+
+<ul>
+
+<li>
+
+<a href="signin.html">
+
+Sign In
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Privacy Policy
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Terms
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>
+
+Follow Us
+
+</h3>
+
+<div class="socials">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-x-twitter"></i>
+
+<i class="fab fa-youtube"></i>
+
+<i class="fab fa-discord"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 AnimeFlix. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ========================= -->
+<!-- BACK TO TOP -->
+<!-- ========================= -->
+
+<button id="backToTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+</div>
+
+<script src="js/loading.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/slider.js"></script>
+
+</body>
+
+</html>

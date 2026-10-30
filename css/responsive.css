@@ -1,0 +1,172 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* ===========================
+   Tablets (1024px and below)
+=========================== */
+
+@media (max-width:1024px){
+
+    header{
+        padding:0 40px;
+    }
+
+    .hero-content{
+        left:40px;
+        max-width:500px;
+    }
+
+    .hero-content h2{
+        font-size:4rem;
+    }
+
+    .content-section,
+    #browse,
+    #genres,
+    #mylist,
+    .newsletter,
+    footer{
+        padding:50px 40px;
+    }
+
+}
+
+/* ===========================
+   Mobile (768px and below)
+=========================== */
+
+@media (max-width:768px){
+
+    nav{
+        display:none;
+    }
+
+    #menuButton{
+        display:block;
+    }
+
+    header{
+        padding:0 20px;
+        height:70px;
+    }
+
+    #mobileMenu{
+        top:70px;
+        height:calc(100vh - 70px);
+    }
+
+    .logo h1{
+        font-size:1.6rem;
+    }
+
+    .logo img{
+        width:40px;
+    }
+
+    .hero-content{
+        left:20px;
+        right:20px;
+        max-width:100%;
+    }
+
+    .hero-content h2{
+        font-size:3rem;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .buttons a,
+    .buttons button{
+        width:100%;
+        text-align:center;
+    }
+
+    .content-section,
+    #browse,
+    #genres,
+    #mylist,
+    .newsletter,
+    footer{
+        padding:40px 20px;
+    }
+
+    .section-title{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .anime-grid{
+        grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+        gap:20px;
+    }
+
+    .anime-card img{
+        height:240px;
+    }
+
+    .genre-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .newsletter form{
+        flex-direction:column;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        width:100%;
+    }
+
+}
+
+/* ===========================
+   Small Phones (480px and below)
+=========================== */
+
+@media (max-width:480px){
+
+    .hero-content h2{
+        font-size:2.4rem;
+    }
+
+    .hero-content span{
+        font-size:12px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+    }
+
+    .section-title h2{
+        font-size:1.5rem;
+    }
+
+    .anime-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .anime-card img{
+        height:210px;
+    }
+
+    .genre-grid{
+        grid-template-columns:1fr;
+    }
+
+    #backToTop{
+        width:45px;
+        height:45px;
+        right:20px;
+        bottom:20px;
+    }
+
+}
